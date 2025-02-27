@@ -1,0 +1,136 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+margin-top: 30px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 12px;
+width: 100%;
+height: 100vh;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border: 1px solid black;
+    box-shadow: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transform: translate(-25% -25%);
+    box-sizing: border-box;
+}
+.image{
+   opacity: 0.5;
+}
+.text{
+    position: relative;
+}
+.text h1{
+    position: absolute;
+    top: -15rem;
+    left: 2rem;
+}
+.gauche-droite{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 40px;
+}
+.formulaire{
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ input{
+    margin-right: 20px;
+ }
+#phone{
+    border: none;
+    border-bottom: 2px solid #2db987;
+}
+#lastname{
+    border:1px solid red;
+}
+#payement{
+    display: flex;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+ .button .submit{
+    background:#2db987;
+    margin-bottom: 10px;
+}
+.reset{
+    border: 1px solid #2db987;
+}
+.formulaire .monpreféré{
+    display: block;
+    margin-top: 10rem;
+}
+.droite{
+    display: block;
+    margin-right: 10px;
+}
+.radios{
+    cursor:  pointer;
+}
+li{
+    margin-left: 10px;
+}
+progress{
+    width: 100%;
+    margin-bottom: -10px;
+    margin-left: 20px;
+    background: #2db987;
+    border-radius: 9px;
+    height: 4px;
+}
+.boutton{
+    background-color: #2db987;
+    padding: 10px;
+    text-align: center;
+    margin-left: 16rem;   
+}
+
+@media screen and (max-width:768px){
+
+    .container{
+    
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    
+    .formulaire input{
+        width: 100%;
+    }
+    .gauche-droite{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+     }
+    #phone{
+        width: 100%;
+    }
+    #lastname{
+        width: 100%;
+    }
+    #fistname{
+        width: 100%;
+    }
+    #payement{
+        width: 100%;
+    }
+    progress{
+        width: 50%;
+    }
+}
